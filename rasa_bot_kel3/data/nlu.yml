@@ -119,18 +119,18 @@ nlu:
     - gk 
     - cukup
 
-- intent: kataganti
+- intent: katadepan
   examples: |
-    - kata ganti
-    - Kata Ganti
-    - saya memilih kata ganti
-    - Saya memilih kata ganti
-    - pilih kata ganti
-    - Pilih kata ganti
-    - ganti
-    - Ganti 
+    - kata depan
+    - Kata Depan
+    - saya memilih kata depan
+    - Saya memilih kata depan
+    - pilih kata depan
+    - Pilih kata depan
+    - depan
+    - Depan 
 
-- intent: G_ku
+- intent: D_di
   examples: |
     - kata ganti kata ku
     - kata ganti ku 
@@ -140,7 +140,7 @@ nlu:
     - Saya pilih kata ganti ku
     - Saya pilih kata ganti ku
 
-- intent: KG_kau
+- intent: KD_ke
   examples: |
     - kata ganti kata kau
     - kata ganti kau 
@@ -150,16 +150,10 @@ nlu:
     - Saya pilih kata ganti kau
     - Saya pilih kata ganti kau
 
-- intent: KG_mu
+- intent: KD_dari
   examples: |
-    - kata ganti kata mu
-    - kata ganti mu
-    - mu
-    - Mu
-    - Kata Ganti Mu
-    - Kata ganti mu
-    - Saya pilih kata ganti Mu
-    - Saya pilih kata ganti mu 
+    - Kata Depan dari
+    - kata depan dari
 
 - intent: KG_nya
   examples: |
