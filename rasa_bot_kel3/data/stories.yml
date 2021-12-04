@@ -1,0 +1,88 @@
+version: "2.0"
+
+# sample english
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+#indonesia
+
+- story: nama
+  steps :
+    - intent: nama_saya
+    - action: action_nama_saya
+
+- story: salam
+  steps :
+    - intent: i_salam
+    - action: utter_salam
+
+- story: katadepan
+  steps : 
+    - intent: i_kata_depan
+    - action: utter_kata_depan
+
+- story: partikel
+  steps : 
+    - intent: i_partikel
+    - action: utter_partikel
+
+- story: singkatan
+  steps : 
+    - intent: i_singkatan
+    - action: utter_singkatan
+
+- story: akronim
+  steps : 
+    - intent: i_akronim
+    - action: utter_akronim
+
+- story: angka
+  steps : 
+    - intent: i_angka
+    - action: utter_angka
+
+- story: bilangan
+  steps :
+    - intent: i_bilangan
+    - action: utter_bilangan
+
+- story: memilihpertanyaan
+  steps : 
+    - intent: i_memilihpertanyaan
+    - action: utter_memilihpertanyaan
+
+- story: memberikaninformasi
+  steps : 
+    - intent: i_memberikaninformasi
+    - action: utter_memberikaninformasi
+
+- story: thanks
+  steps : 
+    - intent: i_terimakasih
+    - action: utter_terimakasih

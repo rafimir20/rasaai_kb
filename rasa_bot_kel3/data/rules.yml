@@ -1,0 +1,45 @@
+version: "2.0"
+
+rules:
+
+- rule: Ucapin salam 
+  steps:
+  - intent: i_halo
+  - action: utter_hai_selamat_datang
+
+
+- rule: informasi mengnai (kata depan, partikel, kata singkatan, angka dan bilangan).
+  
+  #kata depan
+  steps:
+  - intent: i_tanya_kata_ganti
+  - action: utter_memberikan_pilihan
+  - action: utter_tanya_kataganti_di
+  - action: utter_tanya_kataganti_ke
+  - action: utter_tanya_kataganti_dari
+
+  - intent: i_memiliki_pertanyaan
+  - action: utter_memeberikan_informasi
+
+  #singkatan
+  - intent: i_tanya_singkatan
+  - action: utter_memberikan_pilihan
+  - action: utter_tanya_singkatan_nama
+  - action: utter_tanya_singkatan_gelar
+  - action: utter_tanya_singkatan_lembaga
+
+  - intent: i_memiliki_pertanyaan
+  - action: utter_memberikan_informasi
+
+  #akronim
+  - intent: i_tanya_akronim
+  - intent: utter_memberikan_pilihan
+  - intent: utter_tanya_akronim
+  - intent: utter_tanya_akronim
+
+  - intent: i_tanya_akronim
+  - action: utter_memberikan_informasi
+
+  #angkabilangan
+
+  

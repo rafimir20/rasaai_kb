@@ -1,0 +1,225 @@
+version: "2.0"
+
+session_config:
+  ssion_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+config:
+  store_entities_as_slots: true
+
+intents:
+- salam:
+    use_entities: true
+- tolak:
+    use_entities: true
+- kataganti:
+    use_entities: true
+- G_ku:
+    use_entities: true
+- KG_kau:
+    use_entities: true
+- KG_mu:
+    use_entities: true
+- KG_nya:
+    use_entities: true
+- katasandang:
+    use_entities: true
+- KS_si:
+    use_entities: true
+- S_sang:
+    use_entities: true
+- titik:
+    use_entities: true
+- t_akhir:
+    use_entities: true
+- t_bilangan:
+    use_entities: true
+- ttk_alamat:
+    use_entities: true
+- koma:
+    use_entities: true
+- k_antarkata:
+    use_entities: true
+- k_penghubung:
+    use_entities: true
+- k_pemisah:
+    use_entities: true
+- k_angkadesimal:
+    use_entities: true
+- nama_saya:
+    use_entities: true
+entities:
+- nama
+slots:
+  nama:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_salam:
+  - text: |-
+      Halo, kamu sedang berbicara dengan chatbot kelompok 3. Ada yang aku bantu? 
+       Aku cuma bisa bantu kamu dalam pembahasaan sesuai PUEBI. Silakan pilih ya : 
+       ========================= 
+       1). Kata depan
+       2). Imbuhan partikel
+       3). Kata singkatan
+       4). Kata akronim
+       5). Kata angka
+       6.) Kata bilangan
+
+       ========================= 
+       Lansgung aja pilih dengan mengetikan angka pilihan:
+
+  utter_katadepan:
+  - text: |-
+      Kamu memilih kata depan!
+       Silahkan memilih pilihan lainnya :  
+       1). Kata depan di  
+       2). Kata depan ke  
+       3). Kata depan dari    
+       Kamu mau kata depan yang mana? Ketik di sini:
+
+  utter_tanya_penggunaan_kata depan_di:
+  - text: |-
+      Contoh penerapan kata depan "di" adalah : 
+       ===
+       
+       Apakah ada yang bisa saya bantu lagi?
+
+
+  utter_tanya_penggunaan_kata depan_ke:
+  - text: |-
+      Contoh penerapan kata depan "ke" adalah : 
+       ===
+       
+       Apakah ada yang bisa saya bantu lagi?
+
+
+  utter_tanya_penggunaan_kata depan_dari:
+  - text: |-
+      Contoh penerapan kata depan "dari" adalah : 
+       ===
+       
+       Butuh bantuan lagi??
+
+
+  utter_partikel:
+  - text: |-
+      Kamu memilih kata imbuhan Partikel!
+       Silahkan memilih pilihan lainnya untuk kata imbuhan Partikel :  
+       1). Kata partikel lah
+       2). Kata partikel kah
+       3). Kata partikel tah
+       4). Kata partikel pun
+       5). Kata partikel per
+       Kamu mau pilih yang mana? Ketik di sini:
+
+
+  utter_tanya_menggunakan_partikel_lah:
+  - text: |-
+      Contoh penerapan kata imbuhan partikel -lah adalah : 
+       ====
+       
+       Butuh bantuan lagi??
+  utter_tanya_menggunakan_partikel_kah:
+  - text: |-
+      Contoh penerapan kata imbuhan partikel adalah : 
+       ===
+       
+       Butuh bantuan lagi??
+
+
+  utter_tanya_menggunakan_partikel_tah:
+  - text: |-
+      Kamu memilih Penggunaan Titik ! Umumnya titik (.) dipakai untuk mengakhiri kalimat. Masih banyak sih penggunaan lainnya..
+       Coba pilih lebih spesifik :  
+       1). Penggunaan titik pada akhir kata  
+       2). Penggunaan titik pada bilangan  
+       3). Penggunaan titik pada alamat  
+       Kamu mau pilih yang mana? Ketik di sini:
+
+
+  utter_tanya_menggunakan_partikel_pun:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada akhir kata adalah : 
+       ===
+       
+       Butuh bantuan lagi??
+  utter_tanya_menggunakan_partikel_per:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       ===  
+       
+       Butuh bantuan lagi??
+  
+  utter_singkatan:
+  - text: |-
+      Kamu memilih kata Singkatan dan akronim!
+       Coba pilih lebih spesifik :  
+       1). Singkatan nama orang 
+       2). Singkatan nama badan/lembaga
+       3). Singkatan tiga huruf
+       4). Singkatan dua huruf
+       5). Singkatan lambang
+       6). Kata Akronim
+       Kamu mau pilih yang mana? Ketik di sini:
+
+  utter_tanya_menggunakan_singkatan_nama orang:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       ===  
+       
+       Butuh bantuan lagi??
+
+
+  utter_tanya_menggunakan_singkatan_lembaga:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       ===  
+       
+       Butuh bantuan lagi??
+
+
+  utter_tanya_menggunakan_singkatan_tigahuruf:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       ===  
+       
+       Butuh bantuan lagi??
+
+
+  utter_tanya_menggunakan_singkatan_duahuruf:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       ===  
+       
+       Butuh bantuan lagi??
+
+
+  utter_tanya_menggunakan_singkatan_lambang:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       ===  
+       
+       Butuh bantuan lagi??
+
+
+  utter_tanya_menggunakan_akronim:
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       ===  
+       
+       Butuh bantuan lagi??
+
+
+  utter_bye:
+  - text: |-
+      Baiklah, bila kamu ingin mengakhiri pembicaraan ini
+       Terima kasih telah berbicara dengan aku, semoga bisa bertemu lagi di lain waktu
+       Da-dah :D
+actions:
+- action_nama_saya
+forms: {}
+e2e_actions: []

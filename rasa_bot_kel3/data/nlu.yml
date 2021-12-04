@@ -1,0 +1,298 @@
+version: "2.0"
+
+# sample english
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+#indonesia
+
+- intent: nama_saya
+  examples: |
+    - nama saya [Fari](nama)
+    - saya namanya [Human](nama)
+
+- intent: pembukaan
+  examples: |
+    - halo
+    - hai
+    - assalamu'alaikum
+    - shalom
+    - gud morning
+    - ada apa?
+    - kenapa?
+
+- intent: tolak
+  examples: |
+    - tidak
+    - nggak
+    - gak 
+    - ga
+    - no
+    - gk 
+    - cukup
+
+- intent: kataganti
+  examples: |
+    - kata ganti
+    - Kata Ganti
+    - saya memilih kata ganti
+    - Saya memilih kata ganti
+    - pilih kata ganti
+    - Pilih kata ganti
+    - ganti
+    - Ganti 
+
+- intent: G_ku
+  examples: |
+    - kata ganti kata ku
+    - kata ganti ku 
+    - ku
+    - Ku
+    - Kata Ganti Ku
+    - Saya pilih kata ganti ku
+    - Saya pilih kata ganti ku
+
+- intent: KG_kau
+  examples: |
+    - kata ganti kata kau
+    - kata ganti kau 
+    - kau
+    - Kau
+    - Kata Ganti Kau
+    - Saya pilih kata ganti kau
+    - Saya pilih kata ganti kau
+
+- intent: KG_mu
+  examples: |
+    - kata ganti kata mu
+    - kata ganti mu
+    - mu
+    - Mu
+    - Kata Ganti Mu
+    - Kata ganti mu
+    - Saya pilih kata ganti Mu
+    - Saya pilih kata ganti mu 
+
+- intent: KG_nya
+  examples: |
+    - kata ganti kata nya
+    - kata ganti nya 
+    - nya
+    - Nya
+    - Kata Ganti Nya
+    - Saya pilih kata ganti nya
+    - Saya pilih kata ganti Nya
+
+- intent: katasandang
+  examples: |
+    - kata sandang
+    - Kata Sandang
+    - saya memilih kata sandang
+    - Saya memilih kata sandang
+    - pilih kata sandang
+    - Pilih kata sandang
+    - sandang
+    - Sandang
+
+- intent: KS_si
+  examples: |
+    - kata ganti sandang si
+    - kata ganti si 
+    - si
+    - Si
+    - Kata Ganti Si
+    - Saya pilih kata sandang si
+    - Saya pilih kata sandang Si
+
+- intent: S_sang
+  examples: |
+    - kata ganti sandang sang
+    - kata ganti sang 
+    - sang
+    - Saya pilih kata sandang Sang
+
+- intent: titik
+  examples: |
+    - kata titik
+    - Kata Titik
+    - saya memilih kata titik
+    - Saya memilih penggunaan kata titik
+    - pilih kata titik
+    - Pilih kata titik
+    - titik
+    - Titik
+    - penggunaan titik
+    - Penggunaan Titik
+    - saya memilih penggunaan titik
+
+- intent: t_akhir
+  examples: |
+    - akhir
+    - titik akhir kata
+    - Titik Akhir Kata
+    - akhir kata
+    - Akhir Kata
+    - penggunaan titik akhir kata
+    - Penggunaan titik akhir kata
+    - Penggunaan titik pada akhir kata
+
+- intent: t_bilangan
+  examples: |
+    - titik bilangan
+    - Titik Bilangan
+    - bilangan
+    - Bilangan
+    - penggunaan titik bilangan
+    - Penggunaan titik bilangan
+    - Penggunaan titik pada bilangan
+ 
+
+- intent: ttk_alamat
+  examples: |
+    - titik alamat
+    - alamat
+    - Penggunaan titik alamat
+    - Penggunaan titik pada alamat
+ 
+
+- intent: koma
+  examples: |
+    - kata koma
+    - Kata Koma
+    - saya memilih kata koma
+    - Saya memilih penggunaan kata koma
+    - pilih kata koma
+    - Pilih kata koma
+    - koma
+    - Koma
+    - penggunaan koma
+    - Penggunaan Koma
+    - saya memilih penggunaan koma
+
+- intent: k_antarkata
+  examples: |
+    - penggunaan koma antar kata
+    - Penggunaan Koma Antar Kata
+    - Penggunaan koma pada antar kata
+    - koma antar kata
+    - Koma Antar Kata
+    - antar kata
+    - Antar Kata  
+
+- intent: k_penghubung
+  examples: |
+    - penggunaan koma penghubung
+    - Penggunaan Koma Penghubung
+    - Penggunaan koma pada penghubung
+    - koma penghubung
+    - Koma Penghubung
+    - Penghubung
+    - penghubung
+
+- intent: k_pemisah
+  examples: |
+    - penggunaan koma pemisah
+    - Penggunaan Koma Pemisah
+    - Penggunaan koma pada pemisah
+    - koma pemisah
+    - Koma Pemisah
+    - Pemisah
+    - pemisah 
+
+- intent: k_angkadesimal
+  examples: |
+    - penggunaan koma angka desimal
+    - Penggunaan Koma Angka Desimal
+    - Penggunaan koma pada angka desimal
+    - koma angka desimal
+    - Koma Angka Desimal
+    - Angka Desimal
+    - angka desimal
