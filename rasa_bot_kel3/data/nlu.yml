@@ -197,11 +197,11 @@ nlu:
   examples: |
 
 
-- intent: t_akhir
+- intent: s_akhir
   examples: |
 
 
-- intent: t_bilangan
+- intent: s_bilangan
   examples: |
 
  
