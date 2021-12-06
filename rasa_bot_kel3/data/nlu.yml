@@ -195,98 +195,36 @@ nlu:
 
 - intent: titik
   examples: |
-    - kata titik
-    - Kata Titik
-    - saya memilih kata titik
-    - Saya memilih penggunaan kata titik
-    - pilih kata titik
-    - Pilih kata titik
-    - titik
-    - Titik
-    - penggunaan titik
-    - Penggunaan Titik
-    - saya memilih penggunaan titik
+
 
 - intent: t_akhir
   examples: |
-    - akhir
-    - titik akhir kata
-    - Titik Akhir Kata
-    - akhir kata
-    - Akhir Kata
-    - penggunaan titik akhir kata
-    - Penggunaan titik akhir kata
-    - Penggunaan titik pada akhir kata
+
 
 - intent: t_bilangan
   examples: |
-    - titik bilangan
-    - Titik Bilangan
-    - bilangan
-    - Bilangan
-    - penggunaan titik bilangan
-    - Penggunaan titik bilangan
-    - Penggunaan titik pada bilangan
+
  
 
 - intent: ttk_alamat
   examples: |
-    - titik alamat
-    - alamat
-    - Penggunaan titik alamat
-    - Penggunaan titik pada alamat
+
  
 
 - intent: koma
   examples: |
-    - kata koma
-    - Kata Koma
-    - saya memilih kata koma
-    - Saya memilih penggunaan kata koma
-    - pilih kata koma
-    - Pilih kata koma
-    - koma
-    - Koma
-    - penggunaan koma
-    - Penggunaan Koma
-    - saya memilih penggunaan koma
+
 
 - intent: k_antarkata
   examples: |
-    - penggunaan koma antar kata
-    - Penggunaan Koma Antar Kata
-    - Penggunaan koma pada antar kata
-    - koma antar kata
-    - Koma Antar Kata
-    - antar kata
-    - Antar Kata  
 
 - intent: k_penghubung
   examples: |
-    - penggunaan koma penghubung
-    - Penggunaan Koma Penghubung
-    - Penggunaan koma pada penghubung
-    - koma penghubung
-    - Koma Penghubung
-    - Penghubung
-    - penghubung
+
 
 - intent: k_pemisah
   examples: |
-    - penggunaan koma pemisah
-    - Penggunaan Koma Pemisah
-    - Penggunaan koma pada pemisah
-    - koma pemisah
-    - Koma Pemisah
-    - Pemisah
-    - pemisah 
+
 
 - intent: k_angkadesimal
   examples: |
-    - penggunaan koma angka desimal
-    - Penggunaan Koma Angka Desimal
-    - Penggunaan koma pada angka desimal
-    - koma angka desimal
-    - Koma Angka Desimal
-    - Angka Desimal
-    - angka desimal
